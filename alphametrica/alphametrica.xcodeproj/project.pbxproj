@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE02350C26BA37900060EE99 /* AMForgotPasswordBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02350B26BA37900060EE99 /* AMForgotPasswordBaseVC.xib */; };
+		CE02351026BA3D070060EE99 /* AMOTPTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02350F26BA3D070060EE99 /* AMOTPTextFieldView.swift */; };
+		CE02351326BA3D0F0060EE99 /* AMOTPTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02351226BA3D0F0060EE99 /* AMOTPTextFieldView.xib */; };
+		CE02351726BA400D0060EE99 /* AMOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02351626BA400D0060EE99 /* AMOTPViewController.swift */; };
+		CE02351B26BA40260060EE99 /* AMOTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02351A26BA40260060EE99 /* AMOTPViewModel.swift */; };
+		CE02351F26BA54B20060EE99 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02351E26BA54B20060EE99 /* Constant.swift */; };
+		CECF0CDB26B8E62200918378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0CDA26B8E62200918378 /* AppDelegate.swift */; };
+		CECF0CDD26B8E62200918378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0CDC26B8E62200918378 /* SceneDelegate.swift */; };
+		CECF0CDF26B8E62200918378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0CDE26B8E62200918378 /* ViewController.swift */; };
+		CECF0CE226B8E62200918378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECF0CE026B8E62200918378 /* Main.storyboard */; };
+		CECF0CE426B8E62300918378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECF0CE326B8E62300918378 /* Assets.xcassets */; };
+		CECF0CE726B8E62300918378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECF0CE526B8E62300918378 /* LaunchScreen.storyboard */; };
+		CECF0CF026B8E65F00918378 /* LoginModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECF0CEF26B8E65F00918378 /* LoginModule.storyboard */; };
+		CECF0CF526B8E6DD00918378 /* AMGradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0CF426B8E6DD00918378 /* AMGradientLabel.swift */; };
+		CECF0CFA26B8E9AB00918378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0CF926B8E9AB00918378 /* BaseViewController.swift */; };
+		CECF0CFD26B8E9BA00918378 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0CFC26B8E9BA00918378 /* BaseViewModel.swift */; };
+		CECF0D0126B8E9DA00918378 /* AMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0D0026B8E9DA00918378 /* AMLoginViewController.swift */; };
+		CECF0D0926B8EB2100918378 /* AMLogoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0D0826B8EB2100918378 /* AMLogoLabel.swift */; };
+		CECF0D0D26B8F3D200918378 /* AMBaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0D0C26B8F3D200918378 /* AMBaseTextField.swift */; };
+		CECF0D1026B8F3FE00918378 /* AMBaseTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF0D0F26B8F3FE00918378 /* AMBaseTextField.xib */; };
+		CECF0D1726B9718900918378 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0D1626B9718900918378 /* View+Extension.swift */; };
+		CECF0D1F26B9765D00918378 /* AMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF0D1E26B9765D00918378 /* AMButton.swift */; };
+		CED9796F26B98174004676DB /* AMForgotPasswordBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9796E26B98174004676DB /* AMForgotPasswordBaseVC.swift */; };
+		CED9797226B98191004676DB /* AMForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9797126B98191004676DB /* AMForgotPasswordViewController.swift */; };
+		CED9797526B981AD004676DB /* AMNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9797426B981AD004676DB /* AMNewPasswordViewController.swift */; };
+		CED9797826B981F1004676DB /* AMLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9797726B981F1004676DB /* AMLoginViewModel.swift */; };
+		CEDD127426B986F200F62E8C /* AMStoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD127326B986F200F62E8C /* AMStoryboardNames.swift */; };
+		CEDD127926B9959800F62E8C /* EmailValidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD127826B9959800F62E8C /* EmailValidable.swift */; };
+		CEDD127D26B9960F00F62E8C /* PasswordValidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD127C26B9960F00F62E8C /* PasswordValidable.swift */; };
+		CEDD128026B998A100F62E8C /* LoginNetworkAbstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD127F26B998A100F62E8C /* LoginNetworkAbstruction.swift */; };
+		CEDD128626B9A27200F62E8C /* FakeNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD128526B9A27200F62E8C /* FakeNetworkClient.swift */; };
+		CEDD128926B9A39C00F62E8C /* AMForgotPasswordBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD128826B9A39C00F62E8C /* AMForgotPasswordBaseViewModel.swift */; };
+		CEDD128C26B9AE4200F62E8C /* AMForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD128B26B9AE4200F62E8C /* AMForgotPasswordViewModel.swift */; };
+		CEDD128F26B9AE4F00F62E8C /* AMNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD128E26B9AE4F00F62E8C /* AMNewPasswordViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE02350B26BA37900060EE99 /* AMForgotPasswordBaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMForgotPasswordBaseVC.xib; sourceTree = "<group>"; };
+		CE02350F26BA3D070060EE99 /* AMOTPTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMOTPTextFieldView.swift; sourceTree = "<group>"; };
+		CE02351226BA3D0F0060EE99 /* AMOTPTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMOTPTextFieldView.xib; sourceTree = "<group>"; };
+		CE02351626BA400D0060EE99 /* AMOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMOTPViewController.swift; sourceTree = "<group>"; };
+		CE02351A26BA40260060EE99 /* AMOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMOTPViewModel.swift; sourceTree = "<group>"; };
+		CE02351E26BA54B20060EE99 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CECF0CD726B8E62200918378 /* alphametrica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alphametrica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECF0CDA26B8E62200918378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CECF0CDC26B8E62200918378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CECF0CDE26B8E62200918378 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CECF0CE126B8E62200918378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CECF0CE326B8E62300918378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CECF0CE626B8E62300918378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CECF0CE826B8E62300918378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECF0CEF26B8E65F00918378 /* LoginModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginModule.storyboard; sourceTree = "<group>"; };
+		CECF0CF426B8E6DD00918378 /* AMGradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGradientLabel.swift; sourceTree = "<group>"; };
+		CECF0CF926B8E9AB00918378 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CECF0CFC26B8E9BA00918378 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CECF0D0026B8E9DA00918378 /* AMLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLoginViewController.swift; sourceTree = "<group>"; };
+		CECF0D0826B8EB2100918378 /* AMLogoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLogoLabel.swift; sourceTree = "<group>"; };
+		CECF0D0C26B8F3D200918378 /* AMBaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMBaseTextField.swift; sourceTree = "<group>"; };
+		CECF0D0F26B8F3FE00918378 /* AMBaseTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMBaseTextField.xib; sourceTree = "<group>"; };
+		CECF0D1626B9718900918378 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		CECF0D1E26B9765D00918378 /* AMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMButton.swift; sourceTree = "<group>"; };
+		CED9796E26B98174004676DB /* AMForgotPasswordBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMForgotPasswordBaseVC.swift; sourceTree = "<group>"; };
+		CED9797126B98191004676DB /* AMForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CED9797426B981AD004676DB /* AMNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMNewPasswordViewController.swift; sourceTree = "<group>"; };
+		CED9797726B981F1004676DB /* AMLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLoginViewModel.swift; sourceTree = "<group>"; };
+		CEDD127326B986F200F62E8C /* AMStoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMStoryboardNames.swift; sourceTree = "<group>"; };
+		CEDD127826B9959800F62E8C /* EmailValidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidable.swift; sourceTree = "<group>"; };
+		CEDD127C26B9960F00F62E8C /* PasswordValidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidable.swift; sourceTree = "<group>"; };
+		CEDD127F26B998A100F62E8C /* LoginNetworkAbstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkAbstruction.swift; sourceTree = "<group>"; };
+		CEDD128526B9A27200F62E8C /* FakeNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkClient.swift; sourceTree = "<group>"; };
+		CEDD128826B9A39C00F62E8C /* AMForgotPasswordBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMForgotPasswordBaseViewModel.swift; sourceTree = "<group>"; };
+		CEDD128B26B9AE4200F62E8C /* AMForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		CEDD128E26B9AE4F00F62E8C /* AMNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMNewPasswordViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECF0CD426B8E62200918378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE02351526BA3FDE0060EE99 /* OTPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE02351626BA400D0060EE99 /* AMOTPViewController.swift */,
+				CE02351A26BA40260060EE99 /* AMOTPViewModel.swift */,
+			);
+			path = OTPViewController;
+			sourceTree = "<group>";
+		};
+		CECF0CCE26B8E62200918378 = {
+			isa = PBXGroup;
+			children = (
+				CECF0CD926B8E62200918378 /* alphametrica */,
+				CECF0CD826B8E62200918378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CECF0CD826B8E62200918378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECF0CD726B8E62200918378 /* alphametrica.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECF0CD926B8E62200918378 /* alphametrica */ = {
+			isa = PBXGroup;
+			children = (
+				CECF0CDA26B8E62200918378 /* AppDelegate.swift */,
+				CECF0CDC26B8E62200918378 /* SceneDelegate.swift */,
+				CEDD128426B9A25B00F62E8C /* NetworkClient */,
+				CEDD127726B9958300F62E8C /* Abstructions */,
+				CEDD127226B986E000F62E8C /* Utility */,
+				CECF0D1526B9717B00918378 /* Extensions */,
+				CECF0CF326B8E6AC00918378 /* Views */,
+				CECF0CF226B8E6A100918378 /* ViewControllers */,
+				CECF0CE026B8E62200918378 /* Main.storyboard */,
+				CECF0CEF26B8E65F00918378 /* LoginModule.storyboard */,
+				CECF0CE326B8E62300918378 /* Assets.xcassets */,
+				CECF0CE526B8E62300918378 /* LaunchScreen.storyboard */,
+				CECF0CE826B8E62300918378 /* Info.plist */,
+			);
+			path = alphametrica;
+			sourceTree = "<group>";
+		};
+		CECF0CF226B8E6A100918378 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CECF0CDE26B8E62200918378 /* ViewController.swift */,
+				CECF0CF926B8E9AB00918378 /* BaseViewController.swift */,
+				CECF0CFC26B8E9BA00918378 /* BaseViewModel.swift */,
+				CECF0CFF26B8E9C400918378 /* LoginModule */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CECF0CF326B8E6AC00918378 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CECF0CF426B8E6DD00918378 /* AMGradientLabel.swift */,
+				CECF0D0826B8EB2100918378 /* AMLogoLabel.swift */,
+				CECF0D0C26B8F3D200918378 /* AMBaseTextField.swift */,
+				CECF0D0F26B8F3FE00918378 /* AMBaseTextField.xib */,
+				CE02350F26BA3D070060EE99 /* AMOTPTextFieldView.swift */,
+				CE02351226BA3D0F0060EE99 /* AMOTPTextFieldView.xib */,
+				CECF0D1E26B9765D00918378 /* AMButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CECF0CFF26B8E9C400918378 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD129126B9B45400F62E8C /* Login */,
+				CED9797A26B98212004676DB /* ForgotViewControllers */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		CECF0D1526B9717B00918378 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CECF0D1626B9718900918378 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CED9797A26B98212004676DB /* ForgotViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD129226B9B45D00F62E8C /* ForgetPasswordBaseClasses */,
+				CEDD129326B9B47B00F62E8C /* InputEmailViewController */,
+				CEDD129626B9B4B700F62E8C /* InputNewPassword */,
+				CE02351526BA3FDE0060EE99 /* OTPViewController */,
+			);
+			path = ForgotViewControllers;
+			sourceTree = "<group>";
+		};
+		CEDD127226B986E000F62E8C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD127326B986F200F62E8C /* AMStoryboardNames.swift */,
+				CE02351E26BA54B20060EE99 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CEDD127726B9958300F62E8C /* Abstructions */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD127826B9959800F62E8C /* EmailValidable.swift */,
+				CEDD127C26B9960F00F62E8C /* PasswordValidable.swift */,
+				CEDD127F26B998A100F62E8C /* LoginNetworkAbstruction.swift */,
+			);
+			path = Abstructions;
+			sourceTree = "<group>";
+		};
+		CEDD128426B9A25B00F62E8C /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD128526B9A27200F62E8C /* FakeNetworkClient.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		CEDD129126B9B45400F62E8C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CECF0D0026B8E9DA00918378 /* AMLoginViewController.swift */,
+				CED9797726B981F1004676DB /* AMLoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CEDD129226B9B45D00F62E8C /* ForgetPasswordBaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CED9796E26B98174004676DB /* AMForgotPasswordBaseVC.swift */,
+				CEDD128826B9A39C00F62E8C /* AMForgotPasswordBaseViewModel.swift */,
+				CE02350B26BA37900060EE99 /* AMForgotPasswordBaseVC.xib */,
+			);
+			path = ForgetPasswordBaseClasses;
+			sourceTree = "<group>";
+		};
+		CEDD129326B9B47B00F62E8C /* InputEmailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CED9797126B98191004676DB /* AMForgotPasswordViewController.swift */,
+				CEDD128B26B9AE4200F62E8C /* AMForgotPasswordViewModel.swift */,
+			);
+			path = InputEmailViewController;
+			sourceTree = "<group>";
+		};
+		CEDD129626B9B4B700F62E8C /* InputNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CED9797426B981AD004676DB /* AMNewPasswordViewController.swift */,
+				CEDD128E26B9AE4F00F62E8C /* AMNewPasswordViewModel.swift */,
+			);
+			path = InputNewPassword;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CECF0CD626B8E62200918378 /* alphametrica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECF0CEB26B8E62300918378 /* Build configuration list for PBXNativeTarget "alphametrica" */;
+			buildPhases = (
+				CECF0CD326B8E62200918378 /* Sources */,
+				CECF0CD426B8E62200918378 /* Frameworks */,
+				CECF0CD526B8E62200918378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = alphametrica;
+			productName = alphametrica;
+			productReference = CECF0CD726B8E62200918378 /* alphametrica.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECF0CCF26B8E62200918378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CECF0CD626B8E62200918378 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = CECF0CD226B8E62200918378 /* Build configuration list for PBXProject "alphametrica" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CECF0CCE26B8E62200918378;
+			productRefGroup = CECF0CD826B8E62200918378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECF0CD626B8E62200918378 /* alphametrica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECF0CD526B8E62200918378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECF0CF026B8E65F00918378 /* LoginModule.storyboard in Resources */,
+				CECF0CE726B8E62300918378 /* LaunchScreen.storyboard in Resources */,
+				CECF0D1026B8F3FE00918378 /* AMBaseTextField.xib in Resources */,
+				CECF0CE426B8E62300918378 /* Assets.xcassets in Resources */,
+				CECF0CE226B8E62200918378 /* Main.storyboard in Resources */,
+				CE02350C26BA37900060EE99 /* AMForgotPasswordBaseVC.xib in Resources */,
+				CE02351326BA3D0F0060EE99 /* AMOTPTextFieldView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECF0CD326B8E62200918378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECF0CFA26B8E9AB00918378 /* BaseViewController.swift in Sources */,
+				CECF0CDF26B8E62200918378 /* ViewController.swift in Sources */,
+				CEDD128626B9A27200F62E8C /* FakeNetworkClient.swift in Sources */,
+				CED9797526B981AD004676DB /* AMNewPasswordViewController.swift in Sources */,
+				CECF0D1726B9718900918378 /* View+Extension.swift in Sources */,
+				CECF0CDB26B8E62200918378 /* AppDelegate.swift in Sources */,
+				CEDD128F26B9AE4F00F62E8C /* AMNewPasswordViewModel.swift in Sources */,
+				CEDD127926B9959800F62E8C /* EmailValidable.swift in Sources */,
+				CE02351B26BA40260060EE99 /* AMOTPViewModel.swift in Sources */,
+				CE02351026BA3D070060EE99 /* AMOTPTextFieldView.swift in Sources */,
+				CEDD128026B998A100F62E8C /* LoginNetworkAbstruction.swift in Sources */,
+				CECF0D0D26B8F3D200918378 /* AMBaseTextField.swift in Sources */,
+				CED9797826B981F1004676DB /* AMLoginViewModel.swift in Sources */,
+				CECF0D0926B8EB2100918378 /* AMLogoLabel.swift in Sources */,
+				CEDD128926B9A39C00F62E8C /* AMForgotPasswordBaseViewModel.swift in Sources */,
+				CECF0CDD26B8E62200918378 /* SceneDelegate.swift in Sources */,
+				CE02351726BA400D0060EE99 /* AMOTPViewController.swift in Sources */,
+				CECF0D0126B8E9DA00918378 /* AMLoginViewController.swift in Sources */,
+				CEDD128C26B9AE4200F62E8C /* AMForgotPasswordViewModel.swift in Sources */,
+				CED9796F26B98174004676DB /* AMForgotPasswordBaseVC.swift in Sources */,
+				CE02351F26BA54B20060EE99 /* Constant.swift in Sources */,
+				CED9797226B98191004676DB /* AMForgotPasswordViewController.swift in Sources */,
+				CECF0CF526B8E6DD00918378 /* AMGradientLabel.swift in Sources */,
+				CEDD127426B986F200F62E8C /* AMStoryboardNames.swift in Sources */,
+				CEDD127D26B9960F00F62E8C /* PasswordValidable.swift in Sources */,
+				CECF0D1F26B9765D00918378 /* AMButton.swift in Sources */,
+				CECF0CFD26B8E9BA00918378 /* BaseViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CECF0CE026B8E62200918378 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECF0CE126B8E62200918378 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CECF0CE526B8E62300918378 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECF0CE626B8E62300918378 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CECF0CE926B8E62300918378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CECF0CEA26B8E62300918378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CECF0CEC26B8E62300918378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T32ZGPLKK8;
+				INFOPLIST_FILE = alphametrica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.alphametrica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CECF0CED26B8E62300918378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T32ZGPLKK8;
+				INFOPLIST_FILE = alphametrica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.alphametrica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECF0CD226B8E62200918378 /* Build configuration list for PBXProject "alphametrica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECF0CE926B8E62300918378 /* Debug */,
+				CECF0CEA26B8E62300918378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECF0CEB26B8E62300918378 /* Build configuration list for PBXNativeTarget "alphametrica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECF0CEC26B8E62300918378 /* Debug */,
+				CECF0CED26B8E62300918378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECF0CCF26B8E62200918378 /* Project object */;
+}

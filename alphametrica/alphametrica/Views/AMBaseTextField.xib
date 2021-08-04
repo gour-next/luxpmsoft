@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMBaseTextField" customModule="alphametrica" customModuleProvider="target">
+            <connections>
+                <outlet property="imageIcon" destination="8NU-T2-wdL" id="eyn-75-nZh"/>
+                <outlet property="lblPlaceholder" destination="1MV-sG-a8z" id="CM7-hk-lKA"/>
+                <outlet property="textField" destination="psI-yr-Etx" id="gye-oM-chN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MV-sG-a8z">
+                    <rect key="frame" x="8" y="4" width="32.5" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psI-yr-Etx">
+                    <rect key="frame" x="36" y="18" width="370" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="XoD-d5-tqp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8X-5t-dcY">
+                    <rect key="frame" x="8" y="55" width="406" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dj0-ku-1ce"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8NU-T2-wdL">
+                    <rect key="frame" x="8" y="25.5" width="20" height="20"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Sog-od-c3f"/>
+                        <constraint firstAttribute="height" constant="20" id="TKc-Er-JsY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="psI-yr-Etx" firstAttribute="centerY" secondItem="8NU-T2-wdL" secondAttribute="centerY" id="01Q-Sz-6EH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="psI-yr-Etx" secondAttribute="trailing" constant="8" id="4DX-M8-0Mq"/>
+                <constraint firstItem="psI-yr-Etx" firstAttribute="leading" secondItem="8NU-T2-wdL" secondAttribute="trailing" constant="8" id="BR9-Ma-reh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n8X-5t-dcY" secondAttribute="trailing" id="Ivy-Wf-oPY"/>
+                <constraint firstItem="1MV-sG-a8z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="K5w-uF-bsf"/>
+                <constraint firstItem="n8X-5t-dcY" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="2" id="NSF-8p-dpc"/>
+                <constraint firstItem="n8X-5t-dcY" firstAttribute="top" secondItem="psI-yr-Etx" secondAttribute="bottom" constant="2" id="dRf-op-OXE"/>
+                <constraint firstItem="1MV-sG-a8z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="iOC-fM-2nV"/>
+                <constraint firstItem="8NU-T2-wdL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="npQ-j2-lmh"/>
+                <constraint firstItem="psI-yr-Etx" firstAttribute="top" secondItem="1MV-sG-a8z" secondAttribute="bottom" id="rJw-i8-ACY"/>
+                <constraint firstItem="n8X-5t-dcY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="sh1-FU-h3a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="99.375" y="-164.78873239436621"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="email_icon" width="42.5" height="42.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
